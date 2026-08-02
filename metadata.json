@@ -1,0 +1,6 @@
+{
+  "name": "Swiftpay",
+  "description": "A stablecoin-to-mobile-money payment gateway operating in Kenya, facilitating instant, low-cost conversions from USDC to M-Pesa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

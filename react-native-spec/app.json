@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "PrivateApp",
+    "slug": "private-app",
+    "scheme": "app",
+    "ios": {
+      "bundleIdentifier": "com.anonymous.privateapp",
+      "associatedDomains": [
+        "webcredentials:your-private-api.com"
+      ]
+    },
+    "android": {
+      "package": "com.anonymous.privateapp",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "your-private-api.com",
+              "pathPrefix": "/.well-known"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    }
+  }
+}
